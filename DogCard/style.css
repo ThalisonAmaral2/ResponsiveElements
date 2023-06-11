@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+}
+/* 
+#3c6d38
+ */
+:root {
+    --greenMid:#274e24;
+    --white:#ffffff;
+}
+@media (min-width: 618px) {
+    html{ 
+    font-size: 16px;
+    }
+}
+@media (max-width: 618px) and (min-width: 540px){
+    html{ 
+    font-size: 14px;
+    }
+}
+@media (max-width: 540px) and (min-width: 464px) {
+    html{ 
+    font-size: 12px;
+    }
+}
+@media (max-width: 464px) {
+    html{ 
+    font-size: 12px;
+    }
+    .left{
+        margin: auto;
+        max-width: 100%;
+    }
+    .right{
+        margin: auto;
+        font-size: 1.5em;
+        max-width: 100%;
+    }
+    img{
+        overflow: hidden;
+        max-width: 100% !important;
+        border-radius: 1em;
+    }
+    .card{
+        margin: auto !important;
+        text-align: center !important;
+        display: block !important;
+        max-width: 58% !important;
+    }
+    .first{
+        margin: 5% auto 0 !important;
+        line-height: auto;
+    }
+    .second{
+        margin: 0 auto !important;
+    }
+    .third>p{
+        display: none !important;
+    }
+}
+.card {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    background-color: var(--greenMid);
+    max-width: 44em;
+    color: var(--white);
+    border-radius: 1em;
+}
+.right {
+    width: 22em;
+    text-align: center;
+}
+.left{
+    text-align: center;
+    width: 22em;
+}
+.first {
+    margin: 12% auto 0;
+    border-radius: 1em;
+}
+.second{
+    margin: 0 auto 0 ;
+    height: 2em;
+    border-radius: 1em;
+    max-width: 62%;
+}
+.third {
+    margin: 15% auto 0 ;
+    height: 2em;
+    border-radius: 1em;
+    max-width: 80%;
+    text-align: left;
+}
+.fourth {
+    margin: 2% auto 0 ;
+    height: 2em;
+    border-radius: 1em;
+    max-width: 76%;
+}
+
+.photo{
+    width: inherit;
+    /* object-fit: cover; */
+    vertical-align: middle;
+    border-top-left-radius: 1em;
+    border-bottom-left-radius: 1em;
+}
+h1{
+    font-size: 1.8em;
+    font-weight: 600;
+}
+h2{
+    font-size: 0.9em;
+    font-weight: 400;
+}
+p{
+    /* display: ; */
+    margin-bottom: 1em;
+}
