@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="body.css">
+    <script src="phone.js" defer></script>
+    <title>Form - Job Aplication</title>
+</head>
+<body>
+    <div class="form-container">
+        <h3 class="form-title">
+            Job Application
+        </h3>
+        <div class="form-section">
+            <form onsubmit="event.preventDefault()" class="form">
+
+                <fieldset class="personal-info">
+                    <legend class="sr-only">Personal Information</legend>
+                    <div class="personal-info-inputs">
+                        <label for="firstname">First name<span>*</span></label>
+                        <input type="text" name="firstname" id="firstname" required>
+                    </div>
+                    <div class="personal-info-inputs">
+                        <label for="lastname">Last name<span>*</span></label>
+                        <input type="text" name="lastname" id="lastname" required>
+                    </div>
+                    <div class="personal-info-inputs">
+                        <label for="email">Email<span>*</span></label>
+                        <input type="email" name="email" id="email" required>
+                    </div>
+                    <div class="personal-info-inputs">
+                        <label for="phone">Phone number<span>*</span></label>
+                        <input type="tel" name="phone" id="phone" placeholder="(99) 9 0000-0000" onchange="console.log('hello')" required>
+                    </div>
+                </fieldset>
+
+                <fieldset class="professional-info">
+                    <legend class="sr-only">Professional Information</legend>
+                    
+                    <div class="experience-level">
+                        <div class="question"><span>How many years of experience you have as a developer?<span>*</span></span></div>
+                        <div>
+                            <input type="radio" name="dev-experience" id="dev-experience-0-1">
+                            <label for="dev-experience-0-1">0-1 year</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="dev-experience" id="dev-experience-1-2">
+                            <label for="dev-experience-1-2">1-2 years</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="dev-experience" id="dev-experience-2-3">
+                            <label for="dev-experience-2-3">2-3 years</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="dev-experience" id="dev-experience-3-more">
+                            <label for="dev-experience-3-more">3+ years</label>
+                        </div>
+                    </div>
+                    <div class="experience-level">
+                        <div class="question"><span>How many years have you been working in Web Development?<span>*</span></span></div>
+                        <div>
+                            <input type="radio" name="web-experience" id="web-experience-0-1">
+                            <label for="web-experience-0-1">0-1 year</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="web-experience" id="web-experience-1-2">
+                            <label for="web-experience-1-2">1-2 years</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="web-experience" id="web-experience-2-3">
+                            <label for="web-experience-2-3">2-3 years</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="web-experience" id="web-experience-3-more">
+                            <label for="web-experience-3-more">3+ years</label>
+                        </div>
+                    </div>
+                    <div class="experience-level">
+                        <div class="question"><span>How many years have you been working with Node.js and MongoDB?<span>*</span></span></div>
+                        <div>
+                            <input type="radio" name="node-experience" id="node-experience-0-1">
+                            <label for="node-experience-0-1">0-1 year</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="node-experience" id="node-experience-1-2">
+                            <label for="node-experience-1-2">1-2 years</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="node-experience" id="node-experience-2-3">
+                            <label for="node-experience-2-3">2-3 years</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="node-experience" id="node-experience-3-more">
+                            <label for="node-experience-3-more">3+ years</label>
+                        </div>
+                    </div>
+                </fieldset>
+
+                <div class="submit-section">
+                    <button class="submit-form" type="submit">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+</body>
+</html>

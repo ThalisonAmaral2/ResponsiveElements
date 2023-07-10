@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*{margin: 0; padding: 0;}
+:root{
+    --bgc-color: #fafafa;
+    --font-color: #391464;
+    --title-color: #062261;
+
+    --bgc-color-dark: #222222;
+    --font-color-dark: #dddddd;
+    --title-color-dark: #5b86e9;
+
+}
+body {
+    /* background: linear-gradient(180deg, #8800ff 2%, #1a1852 80%); */
+    /* background-size: 2000%; */
+    height: 100%;
+    background-color: #20132e;
+}
+.form-container{
+    user-select: none;
+    font-family: 'Inter', sans-serif;
+    background-color: var(--bgc-color);
+    color: var(--font-color);
+    padding: 1.5rem 2.5rem;
+    border-radius: 1rem;
+    max-width: 400px;
+    margin: 20px auto;
+    /* box-shadow: 0px 5px 12px 2px rgb(30, 29, 44); */
+}
+.form{
+    padding-top: 2rem;
+}
+.form-title{
+    text-align: center;
+    /* color: var(--title-color-dark); */
+    padding-top: .5rem;
+    font-size:1.8em;
+
+    background: -webkit-linear-gradient(50deg,#2825f8,#822de2);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    /* text-shadow: 0 20px 2px #dddddd; */
+
+}
+.form-container input{
+    padding: .6rem;
+    border: 1px solid rgb(112, 112, 112);
+    border-radius: .5rem;
+    font-size: 1em;
+}
+.form-container input:hover{
+    outline: 2px solid rgb(65, 116, 194);
+    border: 1px solid rgba(0,0,0,0);
+}
+fieldset{
+    border: none;
+}
+.personal-info-inputs{
+    display: flex;
+    flex-direction: column;
+}   
+
+.sr-only{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+.personal-info label{
+    font-size: .9em;
+    line-height: 1.5rem;
+    font-weight: 600;
+    padding-top: 10px;
+}
+.professional-info{
+    padding: 2rem 0;
+}
+.professional-info{
+    padding: 2rem 0;
+}
+.professional-info > .experience-level{
+    padding: .5rem 0;
+}
+.experience-level input, 
+.experience-level label{
+    cursor: pointer;
+}
+.question{
+    margin-bottom: .5rem;
+    /* background-color: red; */
+    font-weight: 600;
+}
+
+.submit-section{
+    text-align: center;
+    padding: 1rem 0;
+}
+.submit-form{
+    cursor: pointer;
+    /* background-color: none; */
+    background: linear-gradient(50deg,#2825f8,#822de2);
+    color: white;
+    border: none;
+    border-radius: .5rem;
+    font-size: 1.1em;
+    padding: .8rem 3rem;
+    width: 50%;
+    font-weight: 600;
+    letter-spacing: 1px;
+
+    box-shadow: 1px 4px 1px rgba(20, 19, 66, 0.8);
+}
+.submit-form:hover{
+    background: linear-gradient(50deg,#201ead,#5e1da8);
+}
